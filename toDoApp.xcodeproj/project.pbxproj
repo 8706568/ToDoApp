@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		361EF5C51F0FEE1200DB7512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EF5C41F0FEE1200DB7512 /* AppDelegate.swift */; };
-		361EF5C71F0FEE1200DB7512 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EF5C61F0FEE1200DB7512 /* ViewController.swift */; };
+		361EF5C71F0FEE1200DB7512 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EF5C61F0FEE1200DB7512 /* TableViewController.swift */; };
 		361EF5CA1F0FEE1200DB7512 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361EF5C81F0FEE1200DB7512 /* Main.storyboard */; };
 		361EF5CC1F0FEE1200DB7512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 361EF5CB1F0FEE1200DB7512 /* Assets.xcassets */; };
 		361EF5CF1F0FEE1200DB7512 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361EF5CD1F0FEE1200DB7512 /* LaunchScreen.storyboard */; };
+		361EF5DD1F10027800DB7512 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EF5DC1F10027800DB7512 /* DisplayViewController.swift */; };
+		361EF6221F103BA000DB7512 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361EF6211F103BA000DB7512 /* CoreDataHelper.swift */; };
+		362C7F1F1F183BA200E2C4D1 /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C7F1E1F183BA200E2C4D1 /* Date+convertToString.swift */; };
+		362C7F271F1920A200E2C4D1 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 362C7F251F1920A200E2C4D1 /* CoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		361EF5C11F0FEE1200DB7512 /* toDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		361EF5C41F0FEE1200DB7512 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		361EF5C61F0FEE1200DB7512 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		361EF5C61F0FEE1200DB7512 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		361EF5C91F0FEE1200DB7512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		361EF5CB1F0FEE1200DB7512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		361EF5CE1F0FEE1200DB7512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		361EF5D01F0FEE1200DB7512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		361EF5DC1F10027800DB7512 /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		361EF61F1F103B8E00DB7512 /* CoreData1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData1.xcdatamodel; sourceTree = "<group>"; };
+		361EF6211F103BA000DB7512 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		362C7F1E1F183BA200E2C4D1 /* Date+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+convertToString.swift"; path = "toDoApp/Date+convertToString.swift"; sourceTree = "<group>"; };
+		362C7F201F183BE000E2C4D1 /* tableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tableViewCell.swift; path = toDoApp/tableViewCell.swift; sourceTree = "<group>"; };
+		362C7F261F1920A200E2C4D1 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,8 @@
 		361EF5B81F0FEE1200DB7512 = {
 			isa = PBXGroup;
 			children = (
+				361EF5DB1F10019D00DB7512 /* extension */,
+				361EF5D61F0FEE2300DB7512 /* views */,
 				361EF5C31F0FEE1200DB7512 /* toDoApp */,
 				361EF5C21F0FEE1200DB7512 /* Products */,
 			);
@@ -55,13 +67,33 @@
 			isa = PBXGroup;
 			children = (
 				361EF5C41F0FEE1200DB7512 /* AppDelegate.swift */,
-				361EF5C61F0FEE1200DB7512 /* ViewController.swift */,
+				361EF5C61F0FEE1200DB7512 /* TableViewController.swift */,
+				361EF61E1F103B8E00DB7512 /* CoreData1.xcdatamodeld */,
+				361EF6211F103BA000DB7512 /* CoreDataHelper.swift */,
 				361EF5C81F0FEE1200DB7512 /* Main.storyboard */,
+				361EF5DC1F10027800DB7512 /* DisplayViewController.swift */,
 				361EF5CB1F0FEE1200DB7512 /* Assets.xcassets */,
 				361EF5CD1F0FEE1200DB7512 /* LaunchScreen.storyboard */,
 				361EF5D01F0FEE1200DB7512 /* Info.plist */,
+				362C7F251F1920A200E2C4D1 /* CoreData.xcdatamodeld */,
 			);
 			path = toDoApp;
+			sourceTree = "<group>";
+		};
+		361EF5D61F0FEE2300DB7512 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				362C7F201F183BE000E2C4D1 /* tableViewCell.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		361EF5DB1F10019D00DB7512 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				362C7F1E1F183BA200E2C4D1 /* Date+convertToString.swift */,
+			);
+			name = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				361EF5C71F0FEE1200DB7512 /* ViewController.swift in Sources */,
+				362C7F271F1920A200E2C4D1 /* CoreData.xcdatamodeld in Sources */,
+				361EF5DD1F10027800DB7512 /* DisplayViewController.swift in Sources */,
+				362C7F1F1F183BA200E2C4D1 /* Date+convertToString.swift in Sources */,
+				361EF5C71F0FEE1200DB7512 /* TableViewController.swift in Sources */,
+				361EF6221F103BA000DB7512 /* CoreDataHelper.swift in Sources */,
 				361EF5C51F0FEE1200DB7512 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,9 +241,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = toDoApp/Info.plist;
+				INFOPLIST_PREPROCESS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = toDoApp;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -249,8 +288,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = toDoApp/Info.plist;
+				INFOPLIST_PREPROCESS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = toDoApp;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -262,9 +304,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5SLFUP238X;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = toDoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.toDoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.camille.toDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -275,9 +318,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5SLFUP238X;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = toDoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.toDoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.camille.toDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,8 +347,32 @@
 				361EF5D51F0FEE1200DB7512 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		361EF61E1F103B8E00DB7512 /* CoreData1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				361EF61F1F103B8E00DB7512 /* CoreData1.xcdatamodel */,
+			);
+			currentVersion = 361EF61F1F103B8E00DB7512 /* CoreData1.xcdatamodel */;
+			path = CoreData1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		362C7F251F1920A200E2C4D1 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				362C7F261F1920A200E2C4D1 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 362C7F261F1920A200E2C4D1 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 361EF5B91F0FEE1200DB7512 /* Project object */;
 }
